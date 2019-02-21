@@ -1,0 +1,70 @@
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\Program Files\Java\jdk1.7.0_80\jre
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_80-b15
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\conf\logging.properties
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\endorsed
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+八月 28, 2017 11:40:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\temp
+八月 28, 2017 11:40:11 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Java\jdk1.7.0_80\jre\bin;;.
+八月 28, 2017 11:40:12 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+八月 28, 2017 11:40:12 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+八月 28, 2017 11:40:12 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1454 ms
+八月 28, 2017 11:40:12 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+八月 28, 2017 11:40:12 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+八月 28, 2017 11:40:12 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\docs
+八月 28, 2017 11:40:13 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\docs has finished in 1,478 ms
+八月 28, 2017 11:40:13 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\examples
+八月 28, 2017 11:40:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\examples has finished in 717 ms
+八月 28, 2017 11:40:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\host-manager
+八月 28, 2017 11:40:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\host-manager has finished in 163 ms
+八月 28, 2017 11:40:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\manager
+八月 28, 2017 11:40:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\工具包\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\manager has finished in 223 ms
+八月 28, 2017 11:40:14 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+八月 28, 2017 11:40:14 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+八月 28, 2017 11:40:14 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 2893 ms

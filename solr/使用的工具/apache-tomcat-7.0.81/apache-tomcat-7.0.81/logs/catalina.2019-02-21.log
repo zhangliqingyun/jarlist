@@ -1,0 +1,80 @@
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.81
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Aug 11 2017 10:21:27 UTC
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.81.0
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\Program Files\Java\jdk1.8.0_151\jre
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_151-b12
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\conf\logging.properties
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\endorsed
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81
+二月 21, 2019 10:39:15 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\temp
+二月 21, 2019 10:39:15 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_151\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\ProgramData\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;D:\MongoDB\mongodb\database\mongodb2.0.6\bin;D:\tools\putty\;D:\工具包\ykpt\apache-tomcat-6.0.18\bin;D:;tools\crt\;D:\tools\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;D:\tools\svn\bin;D:\tools;C:\AppServ\Apache2.2\bin;C:\AppServ\php5;C:\AppServ\MySQL\bin;.
+二月 21, 2019 10:39:17 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8021"]
+二月 21, 2019 10:39:17 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8001"]
+二月 21, 2019 10:39:17 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 7141 ms
+二月 21, 2019 10:39:18 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+二月 21, 2019 10:39:18 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.81
+二月 21, 2019 10:39:18 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\docs
+二月 21, 2019 10:39:21 上午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+警告: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,152] milliseconds.
+二月 21, 2019 10:39:21 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\docs has finished in 3,279 ms
+二月 21, 2019 10:39:21 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\examples
+二月 21, 2019 10:39:23 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\examples has finished in 2,456 ms
+二月 21, 2019 10:39:23 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\host-manager
+二月 21, 2019 10:39:24 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\host-manager has finished in 200 ms
+二月 21, 2019 10:39:24 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\manager
+二月 21, 2019 10:39:24 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\manager has finished in 177 ms
+二月 21, 2019 10:39:24 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\solr
+二月 21, 2019 10:39:44 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+二月 21, 2019 10:40:00 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory E:\程序员笔记\笔记\api+笔记\solrcloud的配置\使用的工具\apache-tomcat-7.0.81\apache-tomcat-7.0.81\webapps\solr has finished in 35,882 ms
+二月 21, 2019 10:40:00 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8021"]
+二月 21, 2019 10:40:00 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8001"]
+二月 21, 2019 10:40:00 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 42512 ms
+二月 21, 2019 10:45:46 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8021"]
