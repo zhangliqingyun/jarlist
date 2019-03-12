@@ -1,0 +1,3 @@
+set NLS_LANG=SIMPLIFIED CHINESE_CHINA.ZHS16GBK
+set path = .
+sqlplus system/123456@xe
