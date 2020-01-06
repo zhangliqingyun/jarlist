@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>  
+<title>授权系统</title>
+<link rel="shortcut icon" th:href="@{/common/images/headlogo.ico}"/>            
+<link th:href="@{/hplus/css/bootstrap.min.css?v=3.3.6}" rel="stylesheet" />
+<link th:href="@{/hplus/css/plugins/layui/css/layui.css?v=4.1.0}" rel="stylesheet" />
+<link th:href="@{/hplus/css/font-awesome.min.css?v=4.4.0}" rel="stylesheet" />
+<link th:href="@{/hplus/css/animate.css}" rel="stylesheet" />
+<link th:href="@{/hplus/css/style.css?v=4.1.0}" rel="stylesheet" /> 
+<script th:src="@{/plugins/jQuery/jquery-2.2.3.min.js}"></script>   
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>      
+<script th:src="@{/plugins/layui/layui.js}"></script>         
+</head>   
+<body>
+
+   <div class="layui-form-item" style="margin-top:60px;align:center">   
+      <label class="layui-form-label" style="width:200px;align:right">申请码:</label>   
+      <div class="layui-input-block">                     
+         <textarea th:text="${applCode}" readonly="readonly" id="applCode" class="layui-textarea" style="width:600px"></textarea>
+      </div>     
+   </div>  
+     
+   <div class="layui-form-item" style="margin-top:20px;align:center">  
+      <label class="layui-form-label" style="width:200px;align:right">授权码:</label>     
+      <div class="layui-input-block">        
+          <input type="text" name="authCode" id="authCode" style="width:600px" placeholder="请输入授权码" class="layui-input">  
+      </div>   
+   </div>   
+   
+   <div class="layui-form-item" style="margin-top:20px;align:center;margin-left:200px">    
+      <button class="layui-btn" lay-submit="" onclick="checkSaveAuthCode()">授权</button>
+   </div> 
+   
+   <script type="text/javascript">
+      layui.use(['form','laydate'], function(){
+	      var form = layui.form,
+	      layer = layui.layer,
+		  laydate = layui.laydate;
+	  
+		  laydate.render({
+		     elem: '#date'      
+		  });
+      })
+      
+      function checkSaveAuthCode(){
+    	  var applCode = $("#applCode").val().trim();    
+    	  var authCode = $("#authCode").val().trim(); 
+    	  if(applCode == null || authCode == null || applCode.length == 0 || authCode.length == 0){  
+    		  layer.msg('请完善信息', {icon: 5,time: 1600});  
+    	  }else{
+       		  $.ajax({  
+    	          type:'post',  
+    	          url:"checkSaveAuthCode",       
+    	          async:false,
+    	          dataType:'json',  
+    	          data:{"applCode":applCode,"authCode":authCode},
+    	          success:function(data){  
+                     if("success" == data){
+                    	 layer.msg('授权成功', {icon: 1,time: 1600});
+                    	 reloadPage();
+                     }else if("errorDate" == data){
+                    	 layer.msg('授权期限已到，授权失败', {icon: 5,time: 1600});
+                     }else if("errorFormat" == data){
+                    	 layer.msg('授权码的格式不符合，授权失败', {icon: 5,time: 1600});
+                     }else if("errorCode" == data){
+                    	 layer.msg('无效的授权码，授权失败', {icon: 5,time: 1600});
+                     }else{     
+                    	 layer.msg('无效的授权码，授权失败，请稍后重试', {icon: 5,time: 1600});
+                     }  
+    	          },  
+    	          error:function(){  
+    	          	 layer.msg('无效的授权码，授权错误，请稍后重试', {icon: 5,time: 1600});
+    	          }  
+    	      });  
+    	  }
+      }
+      
+      function reloadPage(){
+    	  window.location.reload();  
+      }
+
+  </script>
+ 
+</body>
+</html>

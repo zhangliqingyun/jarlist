@@ -1,0 +1,13 @@
+/* .mini-tree-leaf{ */
+/* 	background-image:url(../images/file.png); */
+/* } */
+/* .mini-tree-expand .mini-tree-folder{ */
+/* 	background-image:url(../images/folder_open.png); */
+/* } */
+/* .mini-tree-folder{ */
+/* 	background-image:url(../images/folder.png); */
+/* } */
+.mini-mask-loading{
+	border:2px solid #E0DBDB;
+} 
+   

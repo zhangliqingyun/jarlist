@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>导入文件</title>   
+</head>  
+<!-- 全局js -->      
+<script th:src="@{/plugins/jQuery/jquery-2.2.3.min.js}"></script> 
+<script th:src="@{/plugins/layui/layui.js}" type="text/javascript"></script>
+<!-- miniui所需资源 -->
+<script th:src="@{/plugins/miniui/boot.js}" type="text/javascript"></script>
+<script th:src="@{/plugins/miniui/index-layout.js}" type="text/javascript"></script>    
+<link rel="stylesheet" th:href="@{/common/css/fileIcon.css}"/>
+<link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}" type="text/javascript"></script>  
+<link rel="stylesheet" th:href="@{/plugins/fileinput/css/fileinput.min.css}"/>
+<link rel="stylesheet" th:href="@{/plugins/miniui/res/fonts/font-awesome/css/font-awesome.min.css}"/>
+<link rel="stylesheet" th:href="@{/plugins/fileinput/themes/explorer-fa/theme.css}"/>
+<script th:src="@{/plugins/fileinput/js/fileinput.min.js}" type="text/javascript"></script>
+<script th:src="@{/plugins/fileinput/js/zh.js}" type="text/javascript"></script>
+<script th:src="@{/plugins/fileinput/themes/fa/theme.js}" type="text/javascript"></script>
+<script th:src="@{/plugins/fileinput/themes/explorer-fa/theme.js}" type="text/javascript"></script>
+<link rel="stylesheet" th:href="@{/plugins/layui/css/layui.css}" />
+<!-- 公共css -->  
+<link rel="stylesheet" th:href="@{/plugins/miniui/miniui/res/font-awesome/css/font-awesome.min.css}"/>      
+<link rel="stylesheet" th:href="@{/common/css/public.css}"/>  
+<link rel="stylesheet" th:href="@{/common/css/fileIcon.css}"/>            
+<style type="text/css">
+   
+ a.btn-default.fileinput-upload.fileinput-upload-button{ /*上传按钮样式*/
+  display:none;
+ }      
+
+</style>        
+<body>
+    <div class="mini-fit">
+  		<div class="mini-splitter" allowResize="false" handlerSize="0"  vertical="true" style="width: 100%; height: 100%;">
+		    <div showCollapseButton="false" style="overflow-y: auto;">
+		    	<div style="height:100%;width:100%;"><input id="file" name="file" type="file" multiple="multiple" class="file-loading" ></input></div>
+		    </div>
+		    <div size="60" showCollapseButton="false">
+		        <div style="height:100%;width:100%;padding:10px;"><button class="layui-btn layui-btn-normal layui-btn-fluid" onclick="fileupload()"><i class="layui-icon">&#xe681;</i>上传</button></div>
+		    </div>        
+	    </div>      
+    </div>          
+</body> 
+<script type="text/javascript">
+ /*<![CDATA[*/
+	 
+	var basePath = /*[[@{/}]]*/
+	mini.parse(); 
+	$(function(){       
+		addFileUpload();   
+	})    
+	
+	//点击上传的方法
+	function fileupload(){
+		var fileCount = $('#file').fileinput('getFilesCount');  
+		var flag = true;
+        if(fileCount==0){
+        	mini.alert("请先选择文件再上传");
+        	return;    
+        } 
+		$("#file").fileinput("upload");
+    }
+ 
+    //加载文件上传控件的方法
+	function addFileUpload(){  
+		$("#file").fileinput({            
+			language : 'zh',         
+			uploadUrl :'uploadfile',                    
+			maxFileCount : 1,//表示允许同时上传的最大文件个数   
+			maxFileSize:20480000,       
+			showCaption : true,//是否显示标题
+			browseClass : "btn btn-primary", //按钮样式
+			showPreview:true,       
+		    allowedFileExtensions: ["xls", "xlsx"],   
+			uploadAsync:true,                  
+			msgFilesTooLess:'您必须至少选择{n}个文件才能上传，请点击“浏览”选择您需要上传的文件！',
+			msgFilesTooMany:'超过了单次上传最大文件数{m}个，请分批次上传！',
+			previewFileIcon: '<i class="fa fa-file"></i>',
+			browseLabel : "浏览",
+			msgSelected:'添加了{n}个文件',   
+			dropZoneTitle:'拖拽文件到这里 …<br/>最多支持1个文件上传<br/>',
+		    uploadExtraData:function (previewId, index) {    
+		          var data = {   
+		              
+		          };
+		          return data;     
+		     },
+			 previewFileIconSettings: {
+			        'doc': '<i class="fa fa-file-word-o text-primary"></i>',
+			        'xls': '<i class="fa fa-file-excel-o text-success"></i>',
+			        'ppt': '<i class="fa fa-file-powerpoint-o text-danger"></i>',
+			        'jpg': '<i class="fa fa-file-photo-o text-warning"></i>',
+			        'pdf': '<i class="fa fa-file-pdf-o text-danger"></i>',
+			        'zip': '<i class="fa fa-file-archive-o text-muted"></i>',
+			        'htm': '<i class="fa fa-file-code-o text-info"></i>',
+			        'txt': '<i class="fa fa-file-text-o text-info"></i>',
+			        'mov': '<i class="fa fa-file-movie-o text-warning"></i>',
+			        'mp3': '<i class="fa fa-file-audio-o text-warning"></i>',
+			    }, 
+			    layoutTemplates:{       //是否显示预览下的上传按钮      
+			    	actionUpload:''
+			    },
+			    previewFileExtSettings: {
+			        'doc': function(ext) {
+			            return ext.match(/(doc|docx)$/i);
+			        },
+			        'xls': function(ext) {
+			            return ext.match(/(xls|xlsx)$/i);
+			        },
+			        'ppt': function(ext) {
+			            return ext.match(/(ppt|pptx)$/i);
+			        },
+			        'zip': function(ext) {
+			            return ext.match(/(zip|rar|tar|gzip|gz|7z)$/i);
+			        },
+			        'htm': function(ext) {
+			            return ext.match(/(php|js|css|htm|html)$/i);
+			        },
+			        'txt': function(ext) {
+			            return ext.match(/(txt|ini|md)$/i);
+			        },
+			        'mov': function(ext) {
+			            return ext.match(/(avi|mpg|mkv|mov|mp4|3gp|webm|wmv)$/i);
+			        },
+			        'mp3': function(ext) {
+			            return ext.match(/(mp3|wav)$/i);
+			        },
+			    }
+		});   
+		
+		$("#file").on('fileuploaded', function(event, data, previewId, index) {
+			var message = mini.decode(data);   
+		   	if(message.response.type == 200){  
+		   	    mini.alert("文件上传成功");
+		   	}else{
+		      	mini.alert(message.response.msg);     
+		   	}    
+		});
+    }
+
+ /*]]>*/
+</script>
+</html>

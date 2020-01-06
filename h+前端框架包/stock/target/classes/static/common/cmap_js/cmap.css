@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*
+.myInfoWindow {
+  position: absolute;
+  z-index: 100;
+  -moz-box-shadow: 0 0 1em #26393D;
+  font-family: sans-serif;
+  font-size: 12px; 
+  background-color: rgb(255, 255, 255, 0);
+}
+*/
+/*.dj_ie .myInfoWindow {*/
+  /*border: 1px solid rgba(255, 255, 255, 0);*/
+/*}*/
+
+.myInfoWindow .content {
+  position: relative;
+  color:#002F2F;
+  overflow: auto;
+  padding:2px 2px 2px 2px; 
+  background-color: rgb(255, 255, 255, 0); 
+}
+
+.actionsPane{
+display : none;
+}
+
+.title {
+  display : none;
+  font-weight: bold;
+  background-color:#046380;
+  color:#E6E2AF;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+}
+ 
+.dj_ie .myInfoWindow {
+  border: 1px solid black;
+}
+ 
+
+ 
+/*
+.myInfoWindow .arrow {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  line-height: 0px;
+  border-top: 60px solid #EFECCA;
+  border-left: 5px solid transparent;
+  border-right: 20px solid transparent;
+  left: 45%;
+  bottom: -60px;
+}
+ 
+.myInfoWindow .close {
+  position: absolute; top: 7px; right: 5px;
+  cursor: pointer;
+  background: url(http://serverapi.arcgisonline.com/jsapi/arcgis/2.6/js/dojo/dijit/themes/claro/layout/images/tabClose.png) no-repeat scroll 0 0 transparent;
+  width: 12px; height: 12px;
+}
+ 
+.myInfoWindow .close:hover  {
+  background-color: #F7FCFF;
+}
+ 
+.myInfoWindow .title {
+  font-weight: bold;
+  background-color:#046380;
+  color:#E6E2AF;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+}
+*/

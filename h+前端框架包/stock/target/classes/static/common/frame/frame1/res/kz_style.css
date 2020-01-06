@@ -1,0 +1,139 @@
+.color{color:#fff;font-size:15px;}
+.navbar-brand{background:#507ca9;padding:15px 0;}
+.sidebar{background:#f7f7f7;}
+.menu{background:#fff;}
+.menu{color:#000;}
+.menu ul{background:#f7f7f7;}
+.menu-title:hover {
+    background: #c9ecff;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li.active > a,
+.navbar-nav li.open a.dropdown-toggle
+{
+    background:#1d9de1;
+}
+
+.navbar, .navbar-nav > li > a{color:#fff;}
+.navbar, .navbar-nav > li > a:hover{color:#c9ecff;}
+
+
+
+.navbar-nav > li > a{color:#fff;  position: relative;
+      text-decoration: none;
+      font-size: 20px;}
+.navbar-nav > li > a:hover{color:#c9ecff;}
+
+.navbar-nav > li > a:before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      width: 0;
+      height: 3px;
+      background: #c9ecff;
+      transition: all .5s;
+}
+ .navbar-nav > li > a:hover:before{
+      width: 100%;
+      left: 0;
+      right: 0;
+  }
+
+
+
+
+.layui-tab-title > li > a:hover{
+	color: #1D9DE1 !important;
+}
+
+.layui-tab-title > li > a:before{
+	  color:red;
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 2px;
+      width: 0;
+      height: 3px;
+      background: #1D9DE1;
+      transition: all .2s;
+}
+ .layui-tab-title > li > a:hover:before{
+      width: 100%;
+      left: 0;
+      right: 0;
+  }
+
+
+
+
+
+
+
+.navbar{background:#1D9DE1;}
+.navbar-right1{float:right;}
+
+.layui-this > a > span,.layui-this > a > i{
+	color:#1d9de1;
+}
+
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after
+	{
+	border: none;
+	border-radius: 0;
+	border-bottom: 3px solid #1D9DE1
+}
+
+
+.mini-tabs-scrollCt {
+    background: #fff;
+    border-width:0;
+    border-bottom-width:1px;
+    border-color:#D3D3D3;
+}
+
+
+.sidebar-toggle 
+{
+    height:36px;
+    line-height: 36px;
+    color: #fff;
+    background-color: #2DA9EB;
+    font-size: 16px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.mini-tab-active:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 0px;
+    background: #1D9DE1;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.layui-tab-title .layui-this:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 46px;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-color: #fff;
+    border-radius: 2px 2px 0 0;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.layui-tab {
+    margin: 0px 0;
+    text-align: left !important;
+}

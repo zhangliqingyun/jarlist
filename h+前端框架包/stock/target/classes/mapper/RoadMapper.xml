@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stock.dao.RoadDao">     
+
+    <resultMap type="com.qingyun.entity.BRoad" id="BRoad">
+      <id column="id" property="id"/>
+      <result column="f_a" property="fA"/>
+      <result column="f_b" property="fB"/>
+      <result column="f_c" property="fC"/>
+      <result column="f_d" property="fD"/>
+      <result column="f_e" property="fE"/>
+      <result column="f_f" property="fF"/>
+      <result column="f_g" property="fG"/>
+      <result column="f_h" property="fH"/>
+      <result column="f_i" property="fI"/>
+      <result column="f_j" property="fJ"/>
+      <result column="f_k" property="fK"/>
+      <result column="f_l" property="fL"/>
+      <result column="f_m" property="fM"/>
+      <result column="f_n" property="fN"/>
+      <result column="f_o" property="fO"/>
+      <result column="f_p" property="fP"/>
+      <result column="f_q" property="fQ"/>
+      <result column="f_r" property="fR"/>
+      <result column="f_s" property="fS"/>
+    </resultMap>
+    
+    <select id="getRoadFileNameList" resultMap="BRoad">
+         select distinct(f_r) from stock.b_road   order by f_s desc   
+    </select> 
+    
+    <select id="getRoadList" parameterType="java.lang.String" resultMap="BRoad">
+         select * from stock.b_road   
+         <if test="fileName!=null and fileName!=''">
+          where f_r = #{fileName}
+         </if>
+          order by f_s desc  
+    </select> 
+    
+    <insert id="save">
+        INSERT INTO  stock.b_road (id,f_a,f_b,f_c,f_d,f_e,f_f,f_g,f_h,f_i,f_j,f_k,f_l,f_m,f_n,f_o,f_p,f_q,f_r,f_s)
+        VALUES
+        <foreach collection="roadList" item="road" separator=",">
+            (null,#{road.fA},#{road.fB},#{road.fC},#{road.fD},#{road.fE},#{road.fF},#{road.fG},#{road.fH},#{road.fI},#{road.fJ},#{road.fK},#{road.fL},#{road.fM},#{road.fN},#{road.fO},#{road.fP},#{road.fQ},#{road.fR},#{road.fS}) 
+        </foreach>
+      </insert>
+  
+</mapper>

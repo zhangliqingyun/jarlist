@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingyun.dao.UserDao">     
+
+    <select id="findUserList" resultType="com.qingyun.entity.User">
+        select * from stock.user   
+    </select> 
+    
+    <select id="getUserListByName"  parameterType="java.lang.String"  resultType="com.qingyun.entity.User">
+        select * from stock.user   
+        <if test="userName!=null">    
+          where username = #{userName}
+        </if>
+    </select> 
+    
+    
+</mapper>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件管理系统登陆</title>   
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" th:href="@{/common/images/headlogo.ico}"/> 
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/hplus/css/font-awesome.css}" rel="stylesheet"/>   
+    <link th:href="@{/hplus/css/animate.css}" rel="stylesheet"/>
+    <link th:href="@{/hplus/css/style.css}" rel="stylesheet"/>
+    <script>if(window.top !== window.self){ window.top.location = window.location;}</script>
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+                <h1 class="logo-name">S</h1>               
+            </div>   
+            <h3>欢迎使用清云文件管理系统</h3>      
+            <div style="height:10px;color:red"></div>                                        
+            <form class="m-t" role="form" th:action="@{/checkLogin}" method="post">   
+                <div class="form-group">
+                    <input type="text" name="userName" class="form-control" placeholder="用户名" required=""/>
+                </div>    
+                <div class="form-group">
+                    <input type="password" name="passWord" class="form-control" placeholder="密码" required=""/>
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>    
+            </form>
+        </div>
+    </div>
+    
+    <!-- 全局js -->   
+    <script th:src="@{/plugins/jQuery/jquery-2.2.3.min.js}"></script>   
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>  
+    
+    	
+</body>
+</html>

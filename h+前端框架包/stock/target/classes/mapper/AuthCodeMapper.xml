@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qingyun.dao.AuthCodeDao">     
+
+    <select id="findAuthCodeList" resultType="com.qingyun.entity.AuthCode">
+        select * from stock.authcode   
+    </select> 
+    
+    <select id="getAuthCodeListBySerialNumber" parameterType="java.lang.String"  resultType="com.qingyun.entity.AuthCode">
+        select authcode authCode,start_date startDate,end_date endDate,serial_number serialNumber from stock.authcode   
+        <if test="serialNumber!=null">
+          where serial_number = #{serialNumber}
+        </if>
+    </select> 
+    
+    <insert id="saveAuthCode" parameterType="AuthCode" useGeneratedKeys="true" keyProperty="id">
+         insert into stock.authcode(authcode,start_date,end_date,serial_number) values(
+	         #{authCode},
+	         #{startDate,jdbcType=DATE},
+	         #{endDate,jdbcType=DATE},
+	         #{serialNumber}
+         );
+    </insert>
+    
+    <delete id="deleteBySerialNumber" parameterType="java.lang.String">  
+        delete from stock.authcode where serial_number = #{serialNumber}  
+    </delete>  
+    
+    
+</mapper>

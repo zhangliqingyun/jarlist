@@ -1,0 +1,579 @@
+ ::-webkit-scrollbar  
+{  
+    width: 8px;  
+    height:8px;  
+    background-color:#fff;  
+} 
+::-webkit-scrollbar-thumb{
+        background:#ddd;
+        border-radius:4px;
+    }
+  
+body {
+   font-size:14px;
+   font-family:寰蒋闆呴粦;
+   color:#000000;
+   padding:0;
+   margin:0;
+}
+ table{
+   font-size:14px;
+   font-family:寰蒋闆呴粦;
+   color:#000000;
+}
+
+html, body{
+   margin:0;padding:0;border:0;width:100%;height:100%;overflow:hidden;
+}  
+
+.xtcls{
+	color: #3f4661;font-size: 16px;line-height: 48px;
+}
+
+/* html body .mini-grid-row-selected
+{
+    background: rgba(241, 216, 176, 0.65);
+}
+html body .mini-grid .mini-grid-cell-selected
+{
+    background: rgba(247, 196, 115, 0.65);
+} */
+.mini-mask-loading{
+	border:2px solid #E0DBDB;
+}
+#textData {
+	align:left
+}
+#numData {
+	align:right
+}
+#actionData {
+	align:center
+}
+
+
+body a:hover.mini-button
+{
+	color: #000000;
+	border-color:#428fb9;
+	background:#fff;
+	font-size:13px;
+	font-family:寰蒋闆呴粦;
+}
+body .mini-button-plain{
+	border:1px solid #e5e0ec;
+	background:#fff;
+	height:28px;
+	font-size:13px;
+	color:#000000;
+	font-family:寰蒋闆呴粦;
+}
+.mini-button{
+	border:1px solid #e5e0ec;
+	color:#000000;
+	height:28px;
+	background:#fff;
+	font-size:13px;
+	font-family:寰蒋闆呴粦;
+}
+
+.mini-pager .mini-button{
+	background:transparent;
+	border:1px solid #ffffff;
+}
+
+.mini-icon{ 
+    color: #000;
+    height: 35px;
+    line-height: 30px;
+}
+
+.mini-button-icon{
+font-size:14px;
+top:13px;
+}
+
+.icon-addnew{
+	background: transparent;
+}
+.icon-addnew:before{
+	content: "\f067";
+}
+.icon-edit{
+	background: transparent;
+}
+.icon-edit:before{
+	content: "\f044";
+}
+.icon-remove{
+	background: transparent;
+}
+.icon-remove:before{
+	content: "\f00d";
+}
+
+
+
+.icon-lock{
+	background: transparent;
+}
+.icon-lock:before{
+	content: "\f023";
+}
+
+
+.icon-unlock{
+	background: transparent;
+}
+.icon-unlock:before{
+	content: "\f09c";
+}
+
+
+.icon-reload{
+	background: transparent;
+}
+.icon-reload:before{
+	content: "\f021";
+}
+
+
+.icon-search{
+	background: transparent;
+}
+.icon-search:before{
+	content: "\f002";
+}
+
+.fa-search {
+   color: #fff;
+}
+
+
+
+.icon-upload{
+	background: transparent;
+}
+.icon-upload:before{
+	content: "\f093";
+}
+
+
+.icon-download{
+	background: transparent;
+}
+.icon-download:before{
+	content: "\f019";
+}
+
+
+.icon-close{
+	background: transparent;
+}
+.icon-close:before{
+	content: "\f00d";
+}
+
+
+
+.icon-goto{
+	background: transparent;
+}
+.icon-goto:before{
+	content: "\f0c1";
+}
+.icon-print{
+	background: transparent;
+}
+.icon-print:before{
+	content: "\f02f";
+}
+
+.icon-save{
+	background: transparent;
+}
+.icon-save:before{
+	content: "\f0c7";
+}
+
+.icon-ok{
+	background: transparent;
+}
+.icon-ok:before{
+	content: "\f00c";
+}
+.icon-cancel{
+	background: transparent;
+}
+.icon-cancel:before{
+	content: "\f00d";
+}
+
+.icon-tip{
+	background: transparent;
+}
+.icon-tip:before{
+	content: "\f041";
+}
+.icon-upload{
+	background: transparent;
+}
+.icon-upload:before{
+	content: "\f093";
+}
+.icon-download{
+	background: transparent;
+}
+.icon-download:before{
+	content: "\f019";
+}
+.icon-undo{
+	background: transparent;
+}
+.icon-undo:before{
+	content: "\f0ee";
+}
+.icon-redo{
+	background: transparent;
+}
+.icon-redo:before{
+	content: "\f0ed";
+}
+
+
+.icon-user{
+	background: transparent;
+}
+.icon-user:before{
+	content: "\f007";
+}
+
+.icon-expand{
+	background: transparent;
+}
+.icon-expand:before{
+	content: "\f103";
+}
+
+
+.icon-filter{
+	background: transparent;
+}
+.icon-filter:before{
+	content: "\f0b0";
+}
+
+
+.icon-sum{
+	background: transparent;
+}
+.icon-sum:before{
+	content: "\f0fe";
+}
+
+.icon-unsum{
+	background: transparent;
+}
+.icon-unsum:before{
+	content: "\f146";
+}
+
+.icon-better:before{
+	content: "\f0d0";
+}
+
+
+.icon-his:before{
+	content: "\f1da";
+}
+.icon-fetch:before{
+	content: "\f01a";
+}
+.icon-push:before{
+	content: "\f01b";
+}
+
+.icon-calc:before{
+	content: "\f040";
+}
+.icon-predict:before{
+	content: "\f2dd";
+}
+.icon-report:before{
+	content: "\f1c2";
+}
+
+
+
+
+
+/*浠ヤ笅鏍峰紡鏄粠miniui鐨則hemes/bootstrap/skin.css鏂囦欢涓憳鍑烘潵鐨勶紝鍙互缇庡寲琛ㄥ崟鎺т欢*/
+/* textbox
+==========================================*/
+.mini-textbox-border
+{
+	background:white;
+	border-color:#ddd;
+	border-radius: 2px;
+}
+.mini-textbox-focus .mini-textbox-border
+{
+	/*background-color: #fff;*/
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+body .mini-error .mini-textbox-border,
+body .mini-error .mini-buttonedit-border,
+body .mini-error .mini-textboxlist-border
+{
+	border-color: #ffa8a8;
+	background-color: #fff3f3;
+}
+.mini-textbox-input
+{
+	color:#333;
+}
+
+
+/* textboxlist
+==========================================*/
+.mini-textboxlist-border
+{
+	border-color: #ddd;
+}
+.mini-textboxlist-focus .mini-textboxlist-border
+{
+	/*background-color: #fff;*/
+	border-color: #ddd;
+	color: #000;
+}
+.mini-textboxlist-item
+{
+	color:#333;
+}
+/*浠ヤ笂鏍峰紡鏄粠miniui鐨則hemes/bootstrap/skin.css鏂囦欢涓憳鍑烘潵鐨勶紝鍙互缇庡寲琛ㄥ崟鎺т欢*/
+
+/**grid hover status**/
+.mini-state-active,
+html body .mini-grid-row-selected,
+.mini-listbox-item-selected td,
+.mini-calendar .mini-calendar-selected,.mini-calendar-menu-selected,
+.mini-tree-selectedNode .mini-tree-nodeshow
+{
+    border-color:#2694e8;
+    background:#c9ecff;
+    color:#000;
+}
+
+/**閫変腑鐨勫崟鍏冩牸cell**/
+html body .mini-grid .mini-grid-cell-selected 
+{
+    background:#c9ecff;
+}
+
+.mini-grid-cell, .mini-listbox-item td, .mini-grid-detailCell, .mini-grid-summaryCell
+{
+	font-family: 寰蒋闆呴粦;
+	font-size: 14px;
+	color: #333333;
+   border-color:#f0f1f5;
+   height: 35px;
+   /**font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;**/
+}
+
+
+/***閫変腑鐨勮**/
+.mini-grid-header, .mini-grid-column-trigger, .mini-grid-headerCell,.mini-grid-topRightCell,.mini-grid-columnproxy
+{
+   /*  border: 1px solid #F0F1F5; */
+   /*  border-color:#e7eaec; 
+    */
+   border-color:#f0f1f5; 
+    background:#f3fbff;
+    color:#333;
+   /*  font-weight: 700;  */
+  /*   font-size: 12px;  */   
+    height: 40px;
+    
+    font-family: 寰蒋闆呴粦;
+	font-size: 14px;
+    
+}
+
+/**鏂戦┈绾�**/
+.mini-grid-row-alt {
+    background-color: #f3fbff;
+}
+
+html body .mini-grid-row-hover
+{
+    border-color:#74b2e2;
+    background:#c9ecff;
+    color:#0070a3;
+}
+
+.mini-widget-header,
+.app-header, .app-toolbar, .bg-toolbar, 
+.mini-panel-header,
+.mini-window .mini-panel-header,
+.mini-outlookbar .mini-outlookbar-groupHeader, .mini-outlookbar-expand .mini-outlookbar-groupHeader, .mini-outlookbar-view2 .mini-outlookbar-groupHeader,
+.mini-layout-region-header, .mini-layout-proxy,
+.mini-calendar-header,
+.mini-tabs-scrollCt, 
+.mini-tabs .mini-tabs-space, .mini-tabs .mini-tabs-space2
+{
+    border-color:#aed0ea;
+    background:#1d9de1;
+    color:#fff;
+}
+
+
+.mini-panel .mini-panel-icon
+{
+    margin-right:8px;
+    color:  white;
+}
+
+ table{
+   font-size:14px;
+   font-family:寰蒋闆呴粦;
+  color: #333333;
+}
+
+
+
+/*寮瑰嚭妗嗚〃鍗曟牱寮�*/
+table.form{
+	width:auto;
+	margin:auto;
+	table-layout: fixed;
+	border: none !important;
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+
+
+/**閫変腑鐨勬爲**/
+.mini-tree-selectedNode .mini-icon, .mini-tree-selectedNode a,
+.mini-grid-row-selected .mini-grid-cell-inner > .mini-icon , 
+.mini-grid-row-selected .mini-grid-cell-inner > * > .mini-icon, 
+.mini-grid-cell-selected > .mini-icon , 
+.mini-grid-cell-selected > * > .mini-icon,
+.mini-grid-row-selected .mini-tree-nodeshow > .mini-icon
+{      
+    color: #676a6c;
+}
+
+
+
+
+/*浠ヤ笅鏍峰紡鏄粠miniui鐨則hemes/cupertino/skin.css鏂囦欢涓憳鍑烘潵鐨勶紝鏇存敼background涓虹函鐧借壊*/
+.mini-widget-content,
+body, .mini-popup, .mini-toolbar, .separator, .mini-panel-border, .mini-pager,
+.mini-panel-toolbar, .mini-panel-footer, .mini-panel-viewport, .mini-window .mini-panel-footer,
+.mini-outlookbar-border, .mini-outlookbar .mini-outlookbar-group, .mini-outlookbar .mini-outlookbar-groupBody, .mini-outlookbar-view2 .mini-outlookbar-groupBody, mini-outlookbar-view3 .mini-outlookbar-group,
+.mini-splitter-border, .mini-splitter .mini-splitter-pane1, .mini-splitter .mini-splitter-pane2,
+.mini-layout-border, .mini-layout-region,
+.mini-menu, .mini-menu-border, .mini-menu-horizontal .mini-menu-border
+.mini-grid-border, .mini-grid-footer, .mini-grid-pager, .mini-grid-filterRow, .mini-grid-groupCell, .mini-grid-summaryCell,
+.mini-listbox-border,
+.mini-progressbar-border,
+.mini-calendar, .mini-calendar-footer, .mini-calendar-menu,
+.mini-tabs-bodys, .mini-tabs .mini-tabs-space, .mini-tabs .mini-tabs-space2, .mini-tabs .mini-tab-active,
+.mini-textbox-border,
+.mini-buttonedit-border,
+.mini-textboxlist-border, .mini-tooltip-inner,
+body .mini-pager-num
+{
+	border-color:#f0f1f5;
+	background:#fff;
+	color:#362b36;
+}
+
+.mini-buttonedit{
+	height: 30px;
+	line-height: 30px;	
+}
+
+.mini-buttonedit-border{
+	height: 30px;
+	line-height: 30px;	
+	border-radius: 4px;
+}
+
+.mini-buttonedit-buttons{
+	height: 30px;
+	line-height: 30px;	
+}
+
+/*閲嶅啓寮瑰嚭绐楁牱寮�*/
+ .mini-panel-border
+{
+	border-color:#d9d9d9;
+	background:#fff;
+	color:#362b36;
+}
+
+
+
+/*鏁版嵁琛ㄦ牸涓婃柟鎸夐挳鏍忔牱寮�*/
+.mini-toolbar {
+	padding:5px !important;
+}
+.mini-toolbar table{
+	white-space: nowrap;
+}
+
+/*鎸夐挳鏍峰紡*/
+.mini-button {
+	border-radius: 3px !important;
+}
+.mini-button .mini-button-inner .mini-iconfont{
+	font: normal normal normal 14px/1.35 FontAwesome;  /*淇敼鎸夐挳瀛椾綋鍥炬爣鏍峰紡*/
+}
+
+/*淇敼寮瑰嚭闈㈡澘鍏抽棴鎸夐挳澶у皬鍜屼綅缃紝鏈�澶у寲銆佹渶灏忓寲鎸夐挳鏈畬鍠�*/
+.mini-panel-header-inner .mini-tools>span{
+	zoom: 1.5;
+	line-height: 0.7;
+	margin-top: 3px;
+	color: #fff;
+}
+
+
+/*鍒嗗壊绾�*/
+.seperator{
+	position: relative;
+	margin-left: 15px;
+}
+.seperator>p{
+	display: inline-block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	background: #6eb3e1;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	color: white;
+	font-size: 14px;
+	font-family: 寰蒋闆呴粦;
+	line-height: 18px;
+}
+.seperator>hr{
+	position: absolute;
+	width: 95%;
+	margin-top: 27px;
+	z-index: -1;
+	border: none;
+	border-bottom: 1px solid #6eb3e1;
+}
+.layui-table, .layui-table-view{
+			margin: 0 !important;
+}
+.layui-table-fixed{
+	z-index: 0 !important;
+}

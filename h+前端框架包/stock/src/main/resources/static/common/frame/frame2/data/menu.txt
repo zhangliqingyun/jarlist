@@ -1,0 +1,9 @@
+﻿[
+	{ "id": "2", iconCls: "fa fa-clock-o", text: "事件管理", url: "device/index_total"},
+	{ "id": "3", iconCls: "fa fa-history", text: "历史记录", url: "history/index"},
+	{ "id": "4", iconCls: "fa fa-spin fa-cog", text: "系统设置", children: [
+	        { "id": "5", iconCls: "fa-feed", text: "机构管理", url: "org/index" },
+	        { "id": "6", iconCls: "fa-braille", text: "用户管理", url: "user/index" }
+	    ]
+	}
+]

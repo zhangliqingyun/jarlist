@@ -1,0 +1,82 @@
+.mini-upload
+{
+    width: 80px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    cursor: pointer;
+    background: transparent;
+}
+.mini-upload-placeholder
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+   
+}
+.mini-upload-button
+{
+    position: absolute;
+    left: 5px;
+    height: 100%;
+    line-height: 20px;
+}
+.upicon-remove
+{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("cancel.gif") no-repeat 50% 50%;
+    cursor: pointer;
+}
+
+
+/*上传表格上传进度样式*/
+.progressbar
+{
+    position: relative;
+    background: #9E9E9E;
+    width: 100%;
+    height: 16px;
+    overflow: hidden;
+}
+.progressbar-percent
+{
+    position: absolute;
+    height: 18px;
+    background: #5FB878;
+    left: 0;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+.progressbar-label
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 13px;
+    color: White;
+    z-index: 10;
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+}
+.mini-state-default, .mini-button, .mini-grid-header, .mini-grid-column-trigger, .mini-grid-headerCell, .mini-grid-topRightCell, .mini-grid-columnproxy, .mini-listbox-header, .mini-listbox-header td, .mini-progressbar-bar, .mini-calendar-tadayButton, .mini-calendar-clearButton, .mini-calendar-okButton, .mini-calendar-cancelButton, .mini-tabs-leftButton, .mini-tabs-rightButton, .mini-tabs-tabmenu, .mini-tab, .mini-textboxlist .mini-textboxlist-item, .mini-htmlfile .mini-buttonedit-button{
+background: #f2f2f2;
+color: #666;
+border-color: #e6e6e6;
+}
+.mini-panel-toolbar .mini-button-icon{
+color: #666;
+}
+.mini-state-active, body .mini-button-checked, body a:hover.mini-button-checked, body a:focus.mini-button-checked, html body .mini-grid-row-selected, .mini-listbox-item-selected td, .mini-calendar .mini-calendar-selected, .mini-calendar-menu-selected, .mini-tree-selectedNode .mini-tree-nodeshow{
+border-color:#e6e6e6;
+background:	#f2f2f2;
+color: #666;
+}
+.mini-grid-newRow{
+	background:#fff;
+}

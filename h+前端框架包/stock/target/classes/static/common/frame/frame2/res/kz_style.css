@@ -1,0 +1,26 @@
+.navbar-brand {
+    width: 450px;
+    background: transparent;
+    cursor: default;
+    font-size: 28px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 28px;
+    color: #fff;
+}
+/* 
+.menu {
+    float: right;
+    right: 180px;
+}
+
+.menu {
+    position: absolute;
+    background: #2d5f8b;
+    overflow: visible;
+    height: 60px;
+    width: auto;
+    z-index: 1000;
+}
+
+ */
