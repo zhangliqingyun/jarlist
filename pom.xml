@@ -96,7 +96,7 @@
      <dependency>
          <groupId>com.alibaba</groupId>
          <artifactId>fastjson</artifactId>
-         <version>1.2.14</version>
+         <version>1.2.25</version>
      </dependency>
      
      <!-- 引入此包是为了使用thymeleaf模板的spring.thymeleaf.mode=LEGACYHTML5，这样可以解决某个标签不以/结尾不报错,列<meta charset="UTF-8"> -->
